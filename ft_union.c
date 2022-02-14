@@ -2,6 +2,9 @@
 /*union é un programma che prese in input due stringhe stampa prima tutta 
 la prima stringa e conseguentemente tutte le lettere della seconda
 (sempre senza doppie) che non sono presenti nella prima
+ex:ciao stronzo, ciaostrnz
+ex:bellissima bellissima, belisma
+ex:pollo tacchi, poltachi
 */
 int check(char *argv, char c, int i)
 {
