@@ -14,7 +14,7 @@ int     ft_putnbr(unsigned int i, int base)
 
 	base_set = "0123456789abcdef";
 	count = 0;
-	// i % 10 per il caso dell'intero e i % 16 nel  caso dell'indirizzo
+	// i % 10 per il caso dell'intero e i % 16 nel  caso dell'esadecimale
 	n = i % base;
     if (i / base > 0)
         count += ft_putnbr(i / base, base);
