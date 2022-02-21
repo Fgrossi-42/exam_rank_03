@@ -9,7 +9,7 @@ ex:pollo tacchi, poltachi
 int check(char *argv, char c, int i)
 {
 	//controllo a ritroso di eventuali doppie di 'c' presenti in argv, a partire da index 'i'
-	while (i-- >= 0)
+	while (i-- >= 1)
 	{
 		if (c == argv[i])
 			return (1);
