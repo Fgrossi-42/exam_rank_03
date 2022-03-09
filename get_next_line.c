@@ -24,6 +24,12 @@ char	*get_next_line(int fd)
 			break;
 		i++;
 	}
+	/*
+	-------------------------------------------------------------------------
+	|	Thank you FranFrau for your gnl					|
+	|	https://github.com/FranFrau/Exam/tree/main/Exam%20Rank%2002	|
+	-------------------------------------------------------------------------
+										*/
 	if (!a[0])
 		return (NULL);
 	new_a = malloc(i + 1);
