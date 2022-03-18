@@ -22,7 +22,7 @@ int main(int n, char **args) {
 		while(i < 3) {
 			j = 0;
 			while (args[i][j]) {
-				if (!USED) {
+				if (!USED){
 					USED = 1;
 					write(1, &args[i][j], 1);
 				}
@@ -30,7 +30,6 @@ int main(int n, char **args) {
 			}
 			i++;
 		}
-
 	}
 	write(1, "\n", 1);
 	return 0;
