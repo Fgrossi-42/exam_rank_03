@@ -39,7 +39,7 @@ char	*get_next_line(int fd)
 	return (new_a);
 }
 
-//this main is to test the function yourself but is not needed on the actual exam
+//questo main serve per testare la funzione da soli ma non è necessario per l'esame vero e proprio
 
 int main(int ac, char **av)
 {
