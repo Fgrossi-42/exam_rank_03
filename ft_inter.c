@@ -1,4 +1,3 @@
-#include <unistd.h>
 /*inter é un programma che presi in input due stringhe stampa (senza doppie)
 tutte le lettere della prima stringa presenti nella seconda
 ex:tumid fleck, null
