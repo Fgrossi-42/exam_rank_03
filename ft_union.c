@@ -6,25 +6,29 @@ ex:bellissima bellissima, belisma
 ex:pollo tacchi, poltachi
 */
 
-/**
-	THIS SHOULD BE A BETTER IMPLEMENTATION IN MY OPINION
-*/
-
 #include <unistd.h>
 
-#define USED used[(unsigned char)args[i][j]]
+int
+	main(int argc, char **argv)
+{
+	int	used[255];
+	int	i, j;
 
-int main(int n, char **args) {
-	int used[255] = {0};
-	int i, j;
-	if (n == 3) {
+	if (argc == 3)
+	{
+		i = 0;
+		while (i < 255)
+			used[i++] = 0;
 		i = 1;
-		while(i < 3) {
+		while (i < 3)
+		{
 			j = 0;
-			while (args[i][j]) {
-				if (!USED){
-					USED = 1;
-					write(1, &args[i][j], 1);
+			while (argv[i][j])
+			{
+				if (!used[(unsigned char)argv[i][j]])
+				{
+					used[(unsigned char)argv[i][j]] = 1;
+					write(1, &argv[i][j], 1);
 				}
 				j++;
 			}
@@ -32,5 +36,5 @@ int main(int n, char **args) {
 		}
 	}
 	write(1, "\n", 1);
-	return 0;
+	return (0);
 }
