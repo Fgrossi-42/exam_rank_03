@@ -24,12 +24,6 @@ char	*get_next_line(int fd)
 			break;
 		i++;
 	}
-	/*
-	-------------------------------------------------------------------------
-	|	Thank you FranFrau for your gnl					|
-	|	https://github.com/FranFrau/Exam/tree/main/Exam%20Rank%2002	|
-	-------------------------------------------------------------------------
-										*/
 	if (!a[0])
 		return (NULL);
 	new_a = malloc(i + 1);
@@ -45,8 +39,10 @@ char	*get_next_line(int fd)
 	return (new_a);
 }
 
-int main(int ac, char **av){
-	//Thx to mprigent for the main
+//this main is to test the function yourself but is not needed on the actual exam
+
+int main(int ac, char **av)
+{
 	int		fd;
 	char	*line;
 	(void)ac;
